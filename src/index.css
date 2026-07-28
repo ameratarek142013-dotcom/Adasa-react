@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+@theme {
+  --color-main-orange: #FF6900; 
+  --color-secondary-orange : #FA9B1D
+}
+
+
+.active{
+    background-image: linear-gradient(to right , #FF6800 , #F54B00);
+    border-radius: 30px;
+    color: white;
+    transition: background 1s;
+}
+
+
+.containerr {
+ @apply w-[95%]  mx-auto md:px-2 py-20
+}
+
+
+.btn {
+    @apply bg-linear-to-r from-orange-500 to-orange-600 text-white rounded-full font-bold hover:-translate-y-0.5 transition-all duration-300
+}
+
+.glassCard {
+    @apply bg-[#161514] rounded-2xl flex flex-col items-center py-4 px-8 border border-orange-800/10
+}
+.card {
+    @apply bg-[#161514] rounded-2xl border border-orange-800/10
+}
+
+.label {
+    @apply flex items-center relative mb-8 bg-[#2E1E14] w-fit py-2 px-5 rounded-full border border-[#ff6a007e] before:h-1.5 before:w-1.5 before:mr-2  before:bg-[#f97316] before:rounded-full before:animate-pulse before:absolute before:right-1 before:top-[50%] before:translate-y-[-50%]
+}
+
+.sectionTitle {
+    @apply text-white text-[36px] md:text-[48px] lg:text-[60px] font-bold
+}
+
+.sectionSubtitle {
+    @apply text-[18px] mt-4 text-neutral-400
+}
+.item {
+    @apply items-start md:items-end
+}
+
+@media ( max-width: 768px) {
+    .active{
+    background-image: linear-gradient(to right , rgba(255, 102, 0, 0.073) , rgba(245, 74, 0, 0.091)00);
+    border: 1px solid #ff6a0061;
+    border-radius: 10px;
+    color: #FF6900;
+    transition: background 1s;
+    padding-block: 12px;
+}
+    
+}
