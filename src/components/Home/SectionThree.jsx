@@ -19,7 +19,7 @@ export default function SectionThree({ categories }) {
                     </div>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
                         {categories.map(((cat,index) => {
-                            return <Link key={index} to='' className='group relative block p-6 rounded-2xl bg-[#161616] border border-[#262626] overflow-hidden hover:border-orange-500/30 transition-all duration-500 hover:-translate-y-1'>
+                            return <Link key={index} to={`/blog?category=${cat.name}`} className='group relative block p-6 rounded-2xl bg-[#161616] border border-[#262626] overflow-hidden hover:border-orange-500/30 transition-all duration-500 hover:-translate-y-1'>
                                 <div className="absolute inset-0 bg-linear-to-br from-orange-500 to-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                                 <div className="relative z-10">
                                     <div className="w-12 h-12 bg-orange-500/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-white/20 transition-colors duration-300 border border-orange-500/20 group-hover:border-transparent"><i className={cat.icon}></i></div>
