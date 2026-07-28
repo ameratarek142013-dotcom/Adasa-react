@@ -25,7 +25,7 @@ export default function SectionFour({ posts }) {
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {posts.map((post) => {
                             return <article key={post.id} className='group card overflow-hidden hover:-translate-y-1 transition-all duration-500'>
-                                <Link to=''>
+                                <Link to={`blog/${post.slug}`}>
                                     <div className="relative h-52 overflow-hidden">
                                         <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out" />
                                         <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>

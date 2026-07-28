@@ -31,7 +31,7 @@ export default function SectionTwo() {
                     <div className="space-y-8">
                         {featuredPosts.map((post) => {
                             return <article key={post.id} className="group relative bg-[#161616] rounded-3xl overflow-hidden border border-[#262626] hover:border-orange-500/30 transition-all duration-500">
-                                <Link to='' className='block'>
+                                <Link to={`blog/${post.slug}`} className='block'>
                                     <div className="grid md:grid-cols-2 gap-0">
                                         <div className="relative h-full md:h-100 overflow-hidden ">
                                             <img className='w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out' src={post.image} alt={post.title} />
@@ -62,7 +62,7 @@ export default function SectionTwo() {
                                                         })}</p>
                                                     </div>
                                                 </div>
-                                                <span className="inline-flex items-center gap-2 text-orange-500 font-semibold text-sm group-hover:gap-3 transition-all duration-300">اقرأ المقال <i className="fa-solid fa-arrow-right-long rotate-180"></i></span>
+                                                <Link to={`blog/${post.slug}`} className="inline-flex items-center gap-2 text-orange-500 font-semibold text-sm group-hover:gap-3 transition-all duration-300">اقرأ المقال <i className="fa-solid fa-arrow-right-long rotate-180"></i></Link>
                                             </div>
                                         </div>
                                     </div>
