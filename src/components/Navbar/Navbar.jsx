@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import logo from '../../assets/logo-GdqARQRt'
 
 export default function Navbar() {
 
@@ -22,7 +23,7 @@ export default function Navbar() {
       <nav className="bg-[#161616fb] selection:bg-orange-500 selection:text-white  font-[Tajawal] backdrop-blur-xl transition-all fixed w-full   z-40 top-0 inset-s-0 border-b border-[#262626] ">
         <div className="max-w-7xl flex flex-wrap items-center justify-between  mx-auto h-20 px-4 sm:px-6 lg:px-8">
           <Link to="/" className="flex items-center gap-3 rtl:space-x-reverse group">
-            <div className="relative w-12 h-12 rounded-xl overflow-hidden group-hover:scale-110 transition-all duration-500">  <img src="../../../src/assets/logo-GdqARQRt.png" className="w-full h-full object-cover" alt="Logo" />
+            <div className="relative w-12 h-12 rounded-xl overflow-hidden group-hover:scale-110 transition-all duration-500">  <img src={logo} className="w-full h-full object-cover" alt="Logo" />
             </div>
             <div className=" flex flex-col">
               <span className=" text-x font-bold bg-linear-to-r from-white to-neutral-300 text-transparent bg-clip-text ">عدسة</span>
